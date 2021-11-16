@@ -15,6 +15,9 @@ if (more) {
         document.location.href = "dz4-3.html"
     })
 }
+document.querySelector("#add1").addEventListener('Click',()=>{
+	document.location.href = "dz4-2.html"
+})
 let all = document.querySelectorAll('input')
 let select = document.querySelector('#sel')
 let fernelem = document.querySelectorAll('#fern')
