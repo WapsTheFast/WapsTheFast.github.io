@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнаяя работа ауф</title>
+    <style>
+        .edit{
+            display: none;
+        }
+        body {
+            background: linear-gradient(to right, #904e95, #e96443);
+        }
+
+        .block1 {
+            display: flex;
+            align-content: flex-start;
+            flex-flow: column wrap;
+        }
+
+        .elem {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'ND Astroneer';
+            color: azure;
+
+        }
+
+        table {
+            width: 100%;
+            font-family: 'ND Astroneer';
+            color: azure;
+
+        }
+
+        tr,
+        td {
+            padding: 5px;
+        }
+
+        #fern {
+            display: none;
+        }
+
+        #spruc {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table border="1px" id="tablet">
+            <tr>
+                <td>Тып</td>
+                <td>Назва</td>
+                <td>Узрост</td>
+                <td>Від</td>
+                <td>Апісанне</td>
+                <td>Апаснасць</td>
+                <td>Першаадкрывацель</td>
+                <td>Класс</td>
+                <td>Тып папаратніка/Высата знаходжання елкі</td>
+                <td>Лісце папаратніка/Высата елкі</td>
+                <td>Выд.</td>
+                <td>Рэд.</td>
+                <td>Поўн.</td>
+            </tr>
+        </table>
+    </div>
+    <div class="block1">
+        <div class="elem">Тып<select name="choose" id="sel">
+                <option value="none">Звычайная расліна</option>
+                <option value="fern">Папаратнік</option>
+                <option value="spruce">Елка</option>
+            </select></div>
+        <div class="elem">Увядзіце назву расліны!!!!!<input type="text" id="name"></div>
+        <div class="elem">Увядзіце ўзрост расліны!!!!!<input type="text" id="age"></div>
+        <div class="elem">Увядзіце від расліны!!!!!<input type="text" id="vid"></div>
+        <div class="elem">Апішыце расліну<input type="text" id="opis"></div>
+        <div class="elem">Апішыце апаснасць расліны<input type="text" id="dang"></div>
+        <div class="elem">Хто аткрыў расліну???<input type="text" id="perv"></div>
+        <div class="elem">Якога класа расліна?<input type="text" id="clas"></div>
+        <div id="fern" class="elem">Тып папаратніка?<input type="text" id="typ"></div>
+        <div id="fern" class="elem">Колькі лісьцеў у папаратніка???<input type="text" id="listnum"></div>
+        <div id="spruc" class="elem">Якая высата знаходжання елкі?<input type="text" id="vysnah"></div>
+        <div id="spruc" class="elem">Якая высата елкі???<input type="text" id="vyselk"></div>
+    </div>
+    <br></br>
+    <div><button id="add">add</button></div>
+    <div><button class="edit" id ="save">save</button></div>
+    <div><button id="back1">back1</button></div>
+    <script src="dz4.js"></script>
+</body>
+
+</html>
