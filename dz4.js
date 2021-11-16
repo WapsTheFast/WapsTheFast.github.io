@@ -7,7 +7,7 @@ let save = document.querySelector("#save")
 let obj = {}
 if (back1) {
     back1.addEventListener('click', function () {
-        document.location.href = "dz4-1.html"
+        document.location.href = "index.html"
     })
 }
 if (more) {
